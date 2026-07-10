@@ -1,0 +1,45 @@
+{
+  "name": "always-on-content-growth-engine",
+  "description": "Turn proven social content into evidence-backed Tencent Cloud content opportunities, platform copy, brand-safe visuals, review packets, and Notion-ready records.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Lux Lu",
+    "url": "https://github.com/AOMJ2PMP"
+  },
+  "homepage": "https://github.com/AOMJ2PMP/always-on-content-growth-engine",
+  "repository": "https://github.com/AOMJ2PMP/always-on-content-growth-engine",
+  "license": "MIT",
+  "keywords": [
+    "content-intelligence",
+    "tencent-cloud",
+    "linkedin",
+    "twitter",
+    "carousel",
+    "notion",
+    "tikhub"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Always-on Content Growth Engine",
+    "shortDescription": "Find proven social patterns and turn them into reviewable Tencent Cloud content.",
+    "longDescription": "A human-reviewed content production system for discovering high-performing social posts, normalizing performance against account baselines, translating reusable patterns into Tencent Cloud customer education, drafting public English copy, generating VI-compatible visual material, composing LinkedIn carousels, and writing evidence-backed opportunities into Notion.",
+    "developerName": "Lux Lu",
+    "category": "Productivity",
+    "capabilities": [
+      "TikHub X and LinkedIn research",
+      "Relative performance scoring",
+      "Tencent Cloud content planning",
+      "Multi-platform copy",
+      "Brand-safe illustration prompts",
+      "LinkedIn carousel composition",
+      "Notion review handoff"
+    ],
+    "brandColor": "#0052D9",
+    "defaultPrompt": [
+      "Find two proven social content opportunities for Tencent Cloud.",
+      "Turn this source post into a reviewable multi-platform content package.",
+      "Create a concise LinkedIn carousel using Tencent Cloud visual material."
+    ]
+  }
+}

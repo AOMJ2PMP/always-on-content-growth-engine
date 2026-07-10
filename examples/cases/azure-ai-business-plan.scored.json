@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "1.0",
+  "candidateId": "x-azure-2071972027322306822",
+  "detectedAt": "2026-07-10T00:00:12Z",
+  "source": {
+    "platform": "X",
+    "account": "Microsoft Azure",
+    "url": "https://x.com/Azure/status/2071972027322306822",
+    "crossPostUrl": null,
+    "postId": "2071972027322306822",
+    "publishedAt": "2026-06-30T15:00:01Z",
+    "text": "You build AI with a plan. It should ship with one, too. Learn how to align product, architecture, and go to market early so monetization is built into the strategy from the start.",
+    "metrics": {
+      "likes": 78,
+      "repostsOrShares": 21,
+      "repliesOrComments": 2,
+      "bookmarks": 42,
+      "views": 9791,
+      "engagement": 123,
+      "deepEngagement": 65
+    },
+    "peerBaseline": {
+      "sampleSize": 16,
+      "window": "Recent Azure X posts from 2026-06-23 to 2026-07-09",
+      "medianEngagement": 57,
+      "medianDeepEngagement": 20,
+      "confidence": "high",
+      "exclusions": [
+        "Target post excluded from peer median",
+        "No pagination beyond the first bounded account page"
+      ],
+      "engagementLift": 2.16,
+      "deepEngagementLift": 3.25
+    },
+    "evidence": {
+      "accessPath": "rest_fallback",
+      "endpoint": "/api/v1/twitter/web/fetch_user_post_tweet",
+      "capturedAt": "2026-07-10T00:00:12Z",
+      "notes": "TikHub hosted MCP was attempted first but the three-account concurrent call remained pending; REST fallback returned HTTP 200 and valid metrics."
+    }
+  },
+  "intelligence": {
+    "hook": "If AI is built with a plan, it should ship with one too.",
+    "audience": [
+      "AI product leaders",
+      "Solution architects",
+      "Product marketing and go-to-market teams"
+    ],
+    "pain": "Teams optimize the demo and architecture first, then discover too late that ownership, adoption, cost, and business value were never designed together.",
+    "structure": [
+      "Use a memorable parallel statement",
+      "Connect product, architecture, and go-to-market",
+      "Frame monetization as an early design decision"
+    ],
+    "visualPattern": "A simple planning framework that connects technical build decisions with business adoption and value.",
+    "contentPattern": "Thought Leadership",
+    "ctaType": "Read",
+    "whyItWorked": [
+      "The hook is short and portable across technical and business audiences.",
+      "It addresses a common gap between AI demos and durable adoption.",
+      "Bookmarks are more than three times the same-account deep-engagement median."
+    ],
+    "cannotCopy": [
+      "Azure monetization program wording",
+      "Any proprietary framework behind the source link",
+      "The source visual or exact parallel sentence"
+    ],
+    "assetDependency": {
+      "contentSelfContained": false,
+      "requiredAsset": "whitepaper-or-guide",
+      "assetReady": "missing",
+      "productionPlan": "Do not infer a Tencent Cloud go-to-market framework from the post. Reconsider only when an approved internal playbook or equivalent source exists.",
+      "evidenceUrls": [
+        "https://delivery-p166573-e1796420.adobeaemcloud.com/adobe/assets/urn:aaid:aem:e1d2bd2f-04e5-42ae-8682-c47d5baf8dc8/original/as/AI%20Agent%20Go%20to%20Market%20Playbook-A.pdf"
+      ]
+    }
+  },
+  "scoring": {
+    "freshness": 85,
+    "replicability": 30,
+    "tencentCloudFit": 75,
+    "brandSafety": 92,
+    "blockers": [
+      "Missing a reusable owned asset or self-contained social payload."
+    ],
+    "relativeEngagementScore": 77.74,
+    "deepEngagementProxyScore": 92.51,
+    "signalScore": 74.54,
+    "recommendation": "Skip",
+    "decisionReasons": [
+      "Weighted engagement is 2.16x the same-account median.",
+      "Deep-engagement proxy is 3.25x the same-account median.",
+      "Baseline confidence is high.",
+      "Asset gate failed: contentSelfContained=false, assetReady=missing."
+    ]
+  },
+  "tencentCloudAngle": {
+    "customerLearning": "How to align an enterprise AI agent's user, workflow, architecture, operating owner, and value path before scaling it.",
+    "topic": "An AI agent needs a business plan too",
+    "products": [
+      "ADP",
+      "CloudBase"
+    ],
+    "applicationSurface": "ADP for agent workflows and CloudBase as a possible application delivery surface, subject to product confirmation.",
+    "bridgeReason": "The content teaches cross-functional planning rather than a platform feature; Tencent Cloud can appear as the environment where the plan becomes an operational application.",
+    "ctaHypothesis": "Explore a Tencent Cloud agent-building guide or architecture resource after the correct product route is confirmed.",
+    "claimRisks": [
+      "Confirm whether ADP, CloudBase, or another product should be the primary overseas CTA.",
+      "Avoid promising monetization outcomes or time-to-market improvements."
+    ],
+    "fitScore": 88,
+    "status": "needs_confirmation"
+  },
+  "contentPackage": {
+    "x": "An AI agent needs more than a build plan. It needs a business plan.\n\nBefore scaling, align five decisions: user, workflow, architecture, operating owner, and value path.\n\nThat is how a demo becomes a repeatable business capability.\n#AIAgents #AIProduct #TencentCloud",
+    "linkedin": "An AI agent can pass a technical demo and still fail as a product.\n\nThe missing work often sits between teams. Before scaling an agent, align five decisions:\n\n1. Who is the user?\n2. Which workflow changes?\n3. What architecture and data does it need?\n4. Who owns operation and improvement?\n5. How will the business recognize value?\n\nTreat these as design inputs, not launch-week questions. That is how an AI experiment becomes a repeatable capability.\n\nA Tencent Cloud product and CTA route should be confirmed before publication.",
+    "instagram": "Your AI agent has a build plan. Does it have a business plan?\n\nSave these five decisions: user, workflow, architecture, owner, and value path.",
+    "carousel": [
+      {
+        "title": "Your agent needs a plan",
+        "support": "Technical success is only one part.",
+        "example": "Build + operate + create value"
+      },
+      {
+        "title": "Name the user",
+        "support": "Choose one real workflow first.",
+        "example": "Role + task + friction"
+      },
+      {
+        "title": "Design the workflow",
+        "support": "Decide what changes around the agent.",
+        "example": "Input → decision → action"
+      },
+      {
+        "title": "Choose the architecture",
+        "support": "Match data, tools, and controls.",
+        "example": "Context + model + policy"
+      },
+      {
+        "title": "Assign an owner",
+        "support": "Someone must improve the system.",
+        "example": "Review + feedback + updates"
+      },
+      {
+        "title": "Define the value path",
+        "support": "Know how progress will be recognized.",
+        "example": "Time / quality / adoption"
+      }
+    ],
+    "cta": "Explore a Tencent Cloud agent-building guide after product confirmation.",
+    "hashtags": [
+      "#AIAgents",
+      "#AIProduct",
+      "#TencentCloud"
+    ],
+    "altText": "A six-slide planning framework connecting an enterprise AI agent's user, workflow, architecture, owner, and value path.",
+    "internalReviewNotes": [
+      "需要产品同学确认 ADP 与 CloudBase 的主次承接关系。",
+      "不能承诺商业化结果、上市速度或 ROI。",
+      "适合 LinkedIn thought leadership，也可以改写成 workshop checklist。"
+    ]
+  },
+  "visualPlan": {
+    "assetPlan": [
+      "Carousel",
+      "Single image"
+    ],
+    "mode": "carousel-system",
+    "prompt": "A refined physical planning table for an enterprise AI agent, five off-white modules labeled only by abstract shapes for user, workflow, architecture, owner, and value, connected by one continuous Tencent-blue to cyan ribbon, clean studio lighting, dark navy outlines, subtle shadows, generous white negative space, no text, no logos, no fake UI.",
+    "negativePrompt": "Microsoft branding, Azure colors, business charts with fake numbers, dense text, logos, purple gradient, mascot, stock photo, guaranteed ROI claims.",
+    "backgrounds": [],
+    "outputs": [],
+    "visualSignature": {
+      "metaphor": "A go-to-market planning board connecting product and monetization",
+      "subjectInventory": [
+        "planning board",
+        "architecture blocks",
+        "market route"
+      ],
+      "composition": "Five planning modules arranged around a central product core",
+      "motionDirection": "Center outward"
+    }
+  },
+  "review": {
+    "brand": {
+      "status": "pending",
+      "notes": "确认表达与来源内容有足够差异。"
+    },
+    "frontOffice": {
+      "status": "pending",
+      "notes": "确认 thought leadership 选题优先级。"
+    },
+    "product": {
+      "status": "pending",
+      "notes": "确认 ADP、CloudBase 或其他产品承接。"
+    },
+    "cta": {
+      "status": "pending",
+      "notes": "确认最终资源链接和 UTM。"
+    },
+    "risk": {
+      "status": "pending",
+      "notes": "避免 ROI、商业化结果和速度承诺。"
+    },
+    "vi": {
+      "status": "pending",
+      "notes": "确认 visual metaphor 与腾讯云 VI。"
+    },
+    "publishApproved": false
+  }
+}

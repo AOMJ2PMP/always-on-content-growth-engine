@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0",
+  "candidateId": "x-googlecloud-2074600334224151036",
+  "detectedAt": "2026-07-10T00:13:46Z",
+  "source": {
+    "platform": "X",
+    "account": "Google Cloud",
+    "url": "https://x.com/googlecloud/status/2074600334224151036",
+    "crossPostUrl": null,
+    "postId": "2074600334224151036",
+    "publishedAt": "2026-07-07T21:03:58Z",
+    "text": "Write your next business client proposal without opening a single file. Ask the Gemini Enterprise app to create a proposal for a specific client. Connected to your calendar, it can read the meeting notes and create a personalized proposal in minutes.",
+    "metrics": {
+      "likes": 134,
+      "repostsOrShares": 16,
+      "repliesOrComments": 3,
+      "bookmarks": 31,
+      "views": 12839,
+      "engagement": 170.5,
+      "deepEngagement": 50
+    },
+    "peerBaseline": {
+      "sampleSize": 16,
+      "window": "Recent original Google Cloud X posts from 2026-06-30 to 2026-07-09",
+      "medianEngagement": 80,
+      "medianDeepEngagement": 21.5,
+      "confidence": "high",
+      "exclusions": [
+        "Target post excluded from peer median",
+        "Pure retweets excluded",
+        "No pagination beyond the first bounded account page"
+      ]
+    },
+    "evidence": {
+      "accessPath": "rest_fallback",
+      "endpoint": "/api/v1/twitter/web/fetch_user_post_tweet",
+      "capturedAt": "2026-07-10T00:13:46Z",
+      "notes": "TikHub returned the complete post text, native 28-second video metadata, and same-account peer metrics."
+    }
+  },
+  "intelligence": {
+    "hook": "Create a client proposal without opening a pile of files.",
+    "audience": [
+      "Sales operations",
+      "Account teams",
+      "Enterprise AI workflow builders"
+    ],
+    "pain": "Teams repeatedly search meeting notes, reconstruct client context, and format the same proposal structure by hand.",
+    "structure": [
+      "Lead with a familiar repetitive task",
+      "Show one input-to-output workflow",
+      "Demonstrate the result in a short native video"
+    ],
+    "visualPattern": "A short workflow demonstration where meeting context becomes a first-draft proposal and remains reviewable by a person.",
+    "contentPattern": "Product Demo",
+    "ctaType": "Try/Explore",
+    "whyItWorked": [
+      "The task is concrete and recognizable to business teams.",
+      "The useful idea is visible in the post and native video without downloading a guide.",
+      "Bookmarks and reposts are both above the same-account median."
+    ],
+    "cannotCopy": [
+      "Gemini Enterprise product screens or wording",
+      "Any claim that ADP connects to calendar or meeting notes without confirmation",
+      "The source video's exact sequence or visual treatment"
+    ],
+    "assetDependency": {
+      "contentSelfContained": true,
+      "requiredAsset": "simple-social-visual",
+      "assetReady": "producible-in-workflow",
+      "productionPlan": "Create a six-slide workflow carousel: approved meeting notes, safe client context, proposal outline, first draft, human review, reusable template. No whitepaper or proprietary research required.",
+      "evidenceUrls": []
+    }
+  },
+  "scoring": {
+    "freshness": 92,
+    "replicability": 88,
+    "tencentCloudFit": 90,
+    "brandSafety": 88,
+    "blockers": []
+  },
+  "tencentCloudAngle": {
+    "customerLearning": "How to turn approved meeting notes into a structured proposal draft while keeping client context and final decisions under human review.",
+    "topic": "From meeting notes to a proposal draft",
+    "products": ["ADP"],
+    "applicationSurface": "Tencent Cloud ADP as a workflow-building surface, subject to confirmation of data connectors and orchestration capabilities.",
+    "bridgeReason": "The workflow is useful even as a conceptual pattern and can be explained with a lightweight carousel instead of a report or customer case study.",
+    "ctaHypothesis": "Explore Tencent Cloud ADP documentation after connector and product capability confirmation.",
+    "claimRisks": [
+      "Do not claim calendar, meeting-note, CRM, or proposal integrations until product confirmation.",
+      "Keep the output framed as a first draft requiring human review."
+    ],
+    "fitScore": 90,
+    "status": "needs_confirmation"
+  },
+  "contentPackage": {
+    "x": "A proposal agent should not start from a blank page.\n\nGive it approved meeting notes, safe client context, a reusable outline, and a clear review step.\n\nThe result is a first draft your team can inspect, improve, and reuse.\n#AIAgents #SalesOps #TencentCloud",
+    "linkedin": "Client proposals often begin with the same manual work: searching meeting notes, reconstructing context, and rebuilding a familiar structure.\n\nA safer agent workflow can make the first draft easier:\n\n1. Start with approved meeting notes\n2. Add only the client context the agent may use\n3. Apply a reusable proposal outline\n4. Generate a first draft\n5. Keep pricing, claims, and commitments under human review\n\nThe goal is not an autonomous final proposal. It is a reviewable starting point the team can improve and reuse.\n\nTencent Cloud ADP capability and CTA wording require product confirmation.",
+    "instagram": "Meeting notes in. Reviewable proposal draft out.\n\nSave this workflow: approved context, reusable outline, first draft, human review.",
+    "carousel": [
+      { "title": "Notes to proposal draft", "support": "Start from approved client context.", "example": "A reviewable workflow" },
+      { "title": "Use approved notes", "support": "Choose the evidence the agent may use.", "example": "Meetings / goals / constraints" },
+      { "title": "Add safe context", "support": "Leave sensitive details outside the prompt.", "example": "Need-to-know only" },
+      { "title": "Reuse an outline", "support": "Give every draft a stable structure.", "example": "Problem / approach / next step" },
+      { "title": "Draft, then review", "support": "People own claims and commitments.", "example": "Revise / approve / escalate" },
+      { "title": "Improve the template", "support": "Turn feedback into the next workflow.", "example": "Explore Tencent Cloud ADP" }
+    ],
+    "cta": "Explore Tencent Cloud ADP after capability confirmation.",
+    "hashtags": ["#AIAgents", "#SalesOps", "#TencentCloud"],
+    "altText": "A six-slide workflow showing how approved meeting notes can become a reviewable client proposal draft.",
+    "internalReviewNotes": [
+      "需要确认 ADP 是否具备可公开描述的连接器或编排能力。",
+      "明确输出是 first draft，不自动做价格、承诺和最终审批。",
+      "本案例不依赖白皮书，可直接生产 carousel。"
+    ]
+  },
+  "visualPlan": {
+    "assetPlan": ["Carousel", "Single image"],
+    "mode": "carousel-system",
+    "prompt": "A unique material illustration of a paper-to-proposal relay on a bright white studio surface: a small stack of meeting-note cards enters from the lower left, a translucent approved-context cylinder filters them, one continuous Tencent-blue to cyan ribbon carries the information into a refined navy proposal folio at the upper right, with a separate human review stamp beside the folio, dark navy ink outlines, restrained depth, subtle contact shadows, generous empty space for typography, no text, no logos, no cloud icon, no agent robot.",
+    "negativePrompt": "Google branding, Gemini UI, calendar logos, reused cloud workflow illustration, robot, fake dashboard, dense text, purple gradient, stock photo, autonomous approval claims.",
+    "backgrounds": [],
+    "outputs": [],
+    "visualSignature": {
+      "metaphor": "Paper-to-proposal relay with a visible human review stamp",
+      "subjectInventory": ["meeting-note cards", "context filter cylinder", "proposal folio", "review stamp", "blue-cyan ribbon"],
+      "composition": "Diagonal relay from lower left to upper right with open space on the left",
+      "motionDirection": "Lower left to upper right"
+    }
+  },
+  "review": {
+    "brand": { "status": "pending", "notes": "确认未复刻来源视频。" },
+    "frontOffice": { "status": "pending", "notes": "确认销售运营受众与发布优先级。" },
+    "product": { "status": "pending", "notes": "确认 ADP 连接器和工作流能力。" },
+    "cta": { "status": "pending", "notes": "确认 ADP 文档或教程链接。" },
+    "risk": { "status": "pending", "notes": "强调人工审核与敏感信息边界。" },
+    "vi": { "status": "pending", "notes": "生成本 candidate 独立背景后审核。" },
+    "publishApproved": false
+  }
+}

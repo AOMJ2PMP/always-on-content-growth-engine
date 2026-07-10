@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0",
+  "candidateId": "x-googlecloud-2073088498463129917",
+  "detectedAt": "2026-07-10T00:13:46Z",
+  "source": {
+    "platform": "X",
+    "account": "Google Cloud",
+    "url": "https://x.com/googlecloud/status/2073088498463129917",
+    "crossPostUrl": null,
+    "postId": "2073088498463129917",
+    "publishedAt": "2026-07-03T16:56:28Z",
+    "text": "Juggling social media channels for a big campaign launch is overwhelming. Use the Gemini Enterprise app to build a complete campaign plan in no time. From drafting posts and creating images to suggesting replies, it handles the manual work for you.",
+    "metrics": {
+      "likes": 148,
+      "repostsOrShares": 23,
+      "repliesOrComments": 9,
+      "bookmarks": 41,
+      "views": 14139,
+      "engagement": 207.5,
+      "deepEngagement": 73
+    },
+    "peerBaseline": {
+      "sampleSize": 16,
+      "window": "Recent original Google Cloud X posts from 2026-06-30 to 2026-07-09",
+      "medianEngagement": 80,
+      "medianDeepEngagement": 21.5,
+      "confidence": "high",
+      "exclusions": [
+        "Target post excluded from peer median",
+        "Pure retweets excluded",
+        "No pagination beyond the first bounded account page"
+      ]
+    },
+    "evidence": {
+      "accessPath": "rest_fallback",
+      "endpoint": "/api/v1/twitter/web/fetch_user_post_tweet",
+      "capturedAt": "2026-07-10T00:13:46Z",
+      "notes": "TikHub returned the complete post text, native 59-second video metadata, and same-account peer metrics."
+    }
+  },
+  "intelligence": {
+    "hook": "A campaign launch becomes overwhelming when every channel starts from scratch.",
+    "audience": [
+      "Content marketers",
+      "Social media managers",
+      "Campaign operations teams"
+    ],
+    "pain": "Teams repeatedly translate one campaign brief into posts, image briefs, response guidance, and channel variants.",
+    "structure": [
+      "Open with cross-channel operational pain",
+      "Show one brief becoming several reusable outputs",
+      "Use a short native demonstration instead of a downloadable report"
+    ],
+    "visualPattern": "A branching content workflow where one approved brief produces channel drafts, an image brief, and a response bank before review.",
+    "contentPattern": "Product Demo",
+    "ctaType": "Try/Explore",
+    "whyItWorked": [
+      "The workflow maps directly to a recurring marketing task.",
+      "The useful concept is visible in the post and native demo without an external guide.",
+      "The deep-engagement proxy is more than three times the account median."
+    ],
+    "cannotCopy": [
+      "Gemini Enterprise product screens and feature sequence",
+      "Claims about generating images or replies without Tencent Cloud capability confirmation",
+      "The source video's exact campaign example"
+    ],
+    "assetDependency": {
+      "contentSelfContained": true,
+      "requiredAsset": "simple-social-visual",
+      "assetReady": "producible-in-workflow",
+      "productionPlan": "Create a six-slide branching workflow from one approved campaign brief to channel drafts, image brief, response bank, and human review. No report, research study, or customer proof required.",
+      "evidenceUrls": []
+    }
+  },
+  "scoring": {
+    "freshness": 88,
+    "replicability": 94,
+    "tencentCloudFit": 92,
+    "brandSafety": 90,
+    "blockers": []
+  },
+  "tencentCloudAngle": {
+    "customerLearning": "How to turn one approved campaign brief into reusable channel drafts while keeping brand, product, and risk review visible.",
+    "topic": "Turn one campaign brief into a content system",
+    "products": ["ADP", "HY"],
+    "applicationSurface": "Tencent Cloud ADP for workflow orchestration and Tencent HY only as supporting model context if approved.",
+    "bridgeReason": "The idea can be demonstrated with a lightweight carousel built from the team's real content workflow; it does not require an original report or external customer evidence.",
+    "ctaHypothesis": "Explore Tencent Cloud ADP documentation after product and model naming confirmation.",
+    "claimRisks": [
+      "Confirm whether image generation, reply suggestions, and multi-step orchestration may be described as product capabilities.",
+      "Do not imply fully autonomous publishing or approval."
+    ],
+    "fitScore": 92,
+    "status": "needs_confirmation"
+  },
+  "contentPackage": {
+    "x": "One campaign brief should not become five disconnected drafting tasks.\n\nA reusable content workflow can turn approved context into channel drafts, an image brief, a response bank, and one visible review queue.\n\nKeep the strategy shared. Adapt the execution.\n#ContentOps #AIAgents #TencentCloud",
+    "linkedin": "A campaign launch becomes expensive when every channel starts from scratch.\n\nA better content workflow keeps one approved brief at the center, then produces reusable working drafts:\n\n1. Extract the campaign goal and audience\n2. Define the shared message\n3. Adapt the draft for each channel\n4. Create an image brief\n5. Prepare likely response guidance\n6. Route everything through brand, product, and risk review\n\nThis is not automatic publishing. It is a more consistent way to move from one strategy to several reviewable assets.\n\nTencent Cloud ADP and HY capability wording requires product confirmation.",
+    "instagram": "One campaign brief. Multiple reviewable assets.\n\nSave this workflow: shared message, channel drafts, image brief, response bank, human review.",
+    "carousel": [
+      { "title": "One brief, many assets", "support": "Keep the campaign strategy shared.", "example": "A reusable content system" },
+      { "title": "Approve the core brief", "support": "Lock goal, audience, and evidence.", "example": "One source of truth" },
+      { "title": "Define the message", "support": "Choose what every channel must preserve.", "example": "Promise + proof + CTA" },
+      { "title": "Adapt by channel", "support": "Change format, not the strategy.", "example": "X / LinkedIn / Instagram" },
+      { "title": "Prepare support assets", "support": "Create an image brief and response bank.", "example": "Visual + likely questions" },
+      { "title": "Review before publishing", "support": "Keep brand and product owners visible.", "example": "Explore Tencent Cloud ADP" }
+    ],
+    "cta": "Explore Tencent Cloud ADP after product confirmation.",
+    "hashtags": ["#ContentOps", "#AIAgents", "#TencentCloud"],
+    "altText": "A six-slide workflow showing one approved campaign brief branching into channel drafts, an image brief, a response bank, and human review.",
+    "internalReviewNotes": [
+      "这是我们现有内容营销流程可以直接生产的案例，不依赖外部报告。",
+      "需要确认 ADP、HY、图片生成与 reply suggestion 的公开能力口径。",
+      "强调 reviewable drafts，不自动发布。"
+    ]
+  },
+  "visualPlan": {
+    "assetPlan": ["Carousel", "Single image"],
+    "mode": "carousel-system",
+    "prompt": "A unique material illustration of a campaign branching press on a bright white studio surface: one thick approved campaign brief card enters a compact central navy-and-white press, then five distinct Tencent-blue to cyan ribbon rails fan outward toward a short post strip, a professional document card, a square image frame, three reply tokens, and a final review gate, dark navy ink outlines, restrained depth, crisp contact shadows, generous negative space for typography, no text, no logos, no cloud icon, no agent robot.",
+    "negativePrompt": "Google branding, Gemini UI, reused cloud workflow illustration, meeting-note cards, proposal folder, robot, fake dashboard, dense text, purple gradient, stock photo, autonomous publishing claims.",
+    "backgrounds": [],
+    "outputs": [],
+    "visualSignature": {
+      "metaphor": "Campaign branching press turning one brief into five reviewable asset lanes",
+      "subjectInventory": ["campaign brief card", "content press", "channel rails", "post strip", "image frame", "reply tokens", "review gate"],
+      "composition": "Central branching hub with outputs fanning to the right and open space on the left",
+      "motionDirection": "Center outward to the right"
+    }
+  },
+  "review": {
+    "brand": { "status": "pending", "notes": "确认未复刻来源产品 demo。" },
+    "frontOffice": { "status": "pending", "notes": "确认与实际内容运营流程一致。" },
+    "product": { "status": "pending", "notes": "确认 ADP、HY 和相关生成能力。" },
+    "cta": { "status": "pending", "notes": "确认最终文档或产品链接。" },
+    "risk": { "status": "pending", "notes": "不表达自动审批或自动发布。" },
+    "vi": { "status": "pending", "notes": "生成本 candidate 独立背景后审核。" },
+    "publishApproved": false
+  }
+}

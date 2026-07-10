@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "1.0",
+  "candidateId": "x-azure-2072742097531150574",
+  "detectedAt": "2026-07-10T00:00:12Z",
+  "source": {
+    "platform": "X",
+    "account": "Microsoft Azure",
+    "url": "https://x.com/Azure/status/2072742097531150574",
+    "crossPostUrl": null,
+    "postId": "2072742097531150574",
+    "publishedAt": "2026-07-02T18:00:00Z",
+    "text": "Getting an agent ready for Microsoft Marketplace takes more than a successful build. This checklist helps surface common readiness gaps early so teams can publish with confidence.",
+    "metrics": {
+      "likes": 60,
+      "repostsOrShares": 22,
+      "repliesOrComments": 3,
+      "bookmarks": 32,
+      "views": 12615,
+      "engagement": 108.5,
+      "deepEngagement": 57
+    },
+    "peerBaseline": {
+      "sampleSize": 16,
+      "window": "Recent Azure X posts from 2026-06-23 to 2026-07-09",
+      "medianEngagement": 57,
+      "medianDeepEngagement": 20,
+      "confidence": "high",
+      "exclusions": [
+        "Target post excluded from peer median",
+        "No pagination beyond the first bounded account page"
+      ],
+      "engagementLift": 1.9,
+      "deepEngagementLift": 2.85
+    },
+    "evidence": {
+      "accessPath": "rest_fallback",
+      "endpoint": "/api/v1/twitter/web/fetch_user_post_tweet",
+      "capturedAt": "2026-07-10T00:00:12Z",
+      "notes": "TikHub hosted MCP was attempted first but the three-account concurrent call remained pending; REST fallback returned HTTP 200 and valid metrics."
+    }
+  },
+  "intelligence": {
+    "hook": "A successful build is not the same as launch readiness.",
+    "audience": [
+      "AI product managers",
+      "Enterprise agent builders",
+      "Platform and operations teams"
+    ],
+    "pain": "Teams discover governance, evaluation, ownership, and launch gaps too late in the agent release process.",
+    "structure": [
+      "Challenge a common assumption",
+      "Promise a practical readiness checklist",
+      "Move the reader toward a deeper guide"
+    ],
+    "visualPattern": "A concise checklist card with one readiness theme per item and strong save value.",
+    "contentPattern": "Checklist / Tips",
+    "ctaType": "Read",
+    "whyItWorked": [
+      "It turns an abstract launch risk into a concrete preflight check.",
+      "The checklist is useful before the reader chooses a platform.",
+      "Bookmarks and reposts are both well above the account median."
+    ],
+    "cannotCopy": [
+      "Microsoft Marketplace-specific requirements",
+      "The source checklist wording or visual composition",
+      "Any implication that Tencent Cloud uses identical marketplace rules"
+    ],
+    "assetDependency": {
+      "contentSelfContained": false,
+      "requiredAsset": "whitepaper-or-guide",
+      "assetReady": "missing",
+      "productionPlan": "Do not draft from the headline alone. Reconsider only if Tencent Cloud owns an approved agent release checklist with equivalent substance.",
+      "evidenceUrls": [
+        "https://delivery-p166573-e1796420.adobeaemcloud.com/adobe/assets/urn:aaid:aem:ac49d189-c5d3-41f5-9948-cbf3cd82d42d/original/as/MSFT%20Azure_Publishing%20and%20Releasing%20Your%20AI%20Agent%20Solution%20Checklist_R-Final%20A.pdf"
+      ]
+    }
+  },
+  "scoring": {
+    "freshness": 88,
+    "replicability": 35,
+    "tencentCloudFit": 70,
+    "brandSafety": 90,
+    "blockers": [
+      "Missing a reusable owned asset or self-contained social payload."
+    ],
+    "relativeEngagementScore": 73.22,
+    "deepEngagementProxyScore": 87.77,
+    "signalScore": 72.34,
+    "recommendation": "Skip",
+    "decisionReasons": [
+      "Weighted engagement is 1.9x the same-account median.",
+      "Deep-engagement proxy is 2.85x the same-account median.",
+      "Baseline confidence is high.",
+      "Asset gate failed: contentSelfContained=false, assetReady=missing."
+    ]
+  },
+  "tencentCloudAngle": {
+    "customerLearning": "How to check whether an enterprise AI agent is ready to move from a working demo into a governed business workflow.",
+    "topic": "6 checks before an enterprise AI agent goes live",
+    "products": [
+      "ADP"
+    ],
+    "applicationSurface": "Tencent Cloud Agent Development Platform as the place to design, test, and operationalize the workflow.",
+    "bridgeReason": "Agent launch readiness is useful platform-independent education; ADP can naturally support the build-to-operations transition without becoming the whole message.",
+    "ctaHypothesis": "Explore Tencent Cloud ADP documentation after product and URL confirmation.",
+    "claimRisks": [
+      "Confirm which evaluation, governance, release, and monitoring capabilities may be named publicly.",
+      "Confirm the overseas ADP documentation URL and current product naming."
+    ],
+    "fitScore": 91,
+    "status": "needs_confirmation"
+  },
+  "contentPackage": {
+    "x": "A working AI agent is not automatically ready for a business workflow.\n\nBefore launch, check six things: task clarity, approved context, evaluation, human review, ownership, and feedback.\n\nExplore how teams can structure enterprise agent workflows with Tencent Cloud ADP.\n#AIAgents #EnterpriseAI #TencentCloud",
+    "linkedin": "A successful AI agent demo is only the beginning.\n\nBefore an agent enters a real business workflow, teams need to check more than model quality:\n\n1. Is the business task specific?\n2. Is the context approved?\n3. Are evaluation criteria defined?\n4. Is human review placed at the right decision?\n5. Does someone own failures and updates?\n6. Can feedback improve the next run?\n\nThis turns launch readiness into an operating practice, not a final QA step.\n\nExplore Tencent Cloud ADP after product and CTA confirmation.",
+    "instagram": "A working agent is not always a launch-ready agent.\n\nSave these six checks for your next enterprise AI workflow: task, context, evaluation, human review, ownership, and feedback.",
+    "carousel": [
+      {
+        "title": "Is your agent launch-ready?",
+        "support": "A working demo is only the beginning.",
+        "example": "6 checks before go-live"
+      },
+      {
+        "title": "Start with the task",
+        "support": "Name the business decision first.",
+        "example": "Owner + outcome + deadline"
+      },
+      {
+        "title": "Approve the context",
+        "support": "Use only trusted business inputs.",
+        "example": "Sources + access + freshness"
+      },
+      {
+        "title": "Define evaluation",
+        "support": "Decide what a good answer means.",
+        "example": "Accuracy + usefulness + risk"
+      },
+      {
+        "title": "Keep humans visible",
+        "support": "Place review at consequential decisions.",
+        "example": "Approve / revise / escalate"
+      },
+      {
+        "title": "Close the loop",
+        "support": "Assign ownership and learn from feedback.",
+        "example": "Explore Tencent Cloud ADP"
+      }
+    ],
+    "cta": "Explore Tencent Cloud ADP documentation after confirmation.",
+    "hashtags": [
+      "#AIAgents",
+      "#EnterpriseAI",
+      "#TencentCloud"
+    ],
+    "altText": "A six-slide checklist explaining how to assess whether an enterprise AI agent is ready for a governed business workflow.",
+    "internalReviewNotes": [
+      "需要 ADP 产品同学确认可公开描述的评测、治理和运营能力。",
+      "CTA 链接和产品命名确认后再进入正式 drafting。",
+      "不要复刻 Microsoft Marketplace 的 checklist 文案或视觉。"
+    ]
+  },
+  "visualPlan": {
+    "assetPlan": [
+      "Carousel",
+      "Docs CTA"
+    ],
+    "mode": "carousel-system",
+    "prompt": "A refined physical preflight checklist for an enterprise AI agent workflow, six small off-white modules connected by one continuous Tencent-blue to cyan ribbon, dark navy ink outlines, subtle studio shadows, bright white background, generous negative space for typography, no text, no logos, no fake UI.",
+    "negativePrompt": "Microsoft branding, Azure colors, marketplace logos, dense text, fake dashboard, tiny UI, purple gradient, mascot, stock photo, unsupported claims.",
+    "backgrounds": [],
+    "outputs": [],
+    "visualSignature": {
+      "metaphor": "A preflight gate for a marketplace release checklist",
+      "subjectInventory": [
+        "checklist modules",
+        "release gate",
+        "policy ribbon"
+      ],
+      "composition": "Left-to-right gated sequence on a white studio surface",
+      "motionDirection": "Left to right"
+    }
+  },
+  "review": {
+    "brand": {
+      "status": "pending",
+      "notes": "确认整体视觉不接近来源品牌。"
+    },
+    "frontOffice": {
+      "status": "pending",
+      "notes": "确认选题优先级与发布平台。"
+    },
+    "product": {
+      "status": "pending",
+      "notes": "确认 ADP 能力口径与当前海外优先级。"
+    },
+    "cta": {
+      "status": "pending",
+      "notes": "确认文档链接、UTM 与承接页面。"
+    },
+    "risk": {
+      "status": "pending",
+      "notes": "确认评测、治理、监控等能力描述。"
+    },
+    "vi": {
+      "status": "pending",
+      "notes": "确认 carousel 背景与品牌规范。"
+    },
+    "publishApproved": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "growth-tikhub-twitter": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.tikhub.io/twitter/mcp",
+        "--header",
+        "Authorization: Bearer ${TIKHUB_API_KEY}"
+      ]
+    },
+    "growth-tikhub-linkedin": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.tikhub.io/linkedin/mcp",
+        "--header",
+        "Authorization: Bearer ${TIKHUB_API_KEY}"
+      ]
+    }
+  }
+}

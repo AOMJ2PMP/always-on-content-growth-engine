@@ -1,0 +1,17 @@
+{
+  "name": "always-on-content-growth-engine-plugin",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check-visuals": "node scripts/check-visual-uniqueness.mjs",
+    "notion-record": "node scripts/build-notion-record.mjs",
+    "render-carousel": "node scripts/render-carousel.mjs",
+    "score": "node scripts/score-candidate.mjs",
+    "validate": "node scripts/validate-plugin.mjs",
+    "test": "node scripts/test-scoring.mjs"
+  },
+  "peerDependencies": {
+    "playwright": ">=1.50.0"
+  }
+}

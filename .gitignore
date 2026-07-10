@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+tmp/
+output/
+outputs/
+examples/rendered/
+*.local
+*.log

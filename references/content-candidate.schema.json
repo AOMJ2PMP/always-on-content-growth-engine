@@ -1,0 +1,225 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tencent-cloud.example/schemas/content-candidate.schema.json",
+  "title": "Always-on Content Candidate Package",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "candidateId",
+    "detectedAt",
+    "source",
+    "intelligence",
+    "scoring",
+    "tencentCloudAngle",
+    "contentPackage",
+    "visualPlan",
+    "review"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "candidateId": { "type": "string", "minLength": 1 },
+    "detectedAt": { "type": "string", "format": "date-time" },
+    "source": {
+      "type": "object",
+      "required": ["platform", "account", "url", "postId", "publishedAt", "text", "metrics", "peerBaseline", "evidence"],
+      "properties": {
+        "platform": { "enum": ["X", "LinkedIn", "Instagram", "YouTube", "TikTok", "Other"] },
+        "account": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "crossPostUrl": { "type": ["string", "null"], "format": "uri" },
+        "postId": { "type": "string" },
+        "publishedAt": { "type": "string", "format": "date-time" },
+        "text": { "type": "string" },
+        "metrics": { "$ref": "#/$defs/metrics" },
+        "peerBaseline": {
+          "type": "object",
+          "required": ["sampleSize", "window", "medianEngagement", "medianDeepEngagement", "confidence"],
+          "properties": {
+            "sampleSize": { "type": "integer", "minimum": 0 },
+            "window": { "type": "string" },
+            "medianEngagement": { "type": "number", "minimum": 0 },
+            "medianDeepEngagement": { "type": "number", "minimum": 0 },
+            "confidence": { "enum": ["low", "medium", "high"] },
+            "exclusions": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": true
+        },
+        "evidence": {
+          "type": "object",
+          "required": ["accessPath", "endpoint", "capturedAt"],
+          "properties": {
+            "accessPath": { "enum": ["mcp", "rest_fallback", "manual"] },
+            "endpoint": { "type": "string" },
+            "capturedAt": { "type": "string", "format": "date-time" },
+            "notes": { "type": "string" }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "intelligence": {
+      "type": "object",
+      "required": ["hook", "audience", "pain", "structure", "visualPattern", "ctaType", "whyItWorked", "cannotCopy", "assetDependency"],
+      "properties": {
+        "hook": { "type": "string" },
+        "audience": { "type": "array", "items": { "type": "string" } },
+        "pain": { "type": "string" },
+        "structure": { "type": "array", "items": { "type": "string" } },
+        "visualPattern": { "type": "string" },
+        "contentPattern": { "enum": ["Checklist / Tips", "How-to", "Product Demo", "Thought Leadership", "Launch / News", "Hot take", "Other"] },
+        "ctaType": { "type": "string" },
+        "whyItWorked": { "type": "array", "items": { "type": "string" } },
+        "cannotCopy": { "type": "array", "items": { "type": "string" } }
+        ,
+        "assetDependency": {
+          "type": "object",
+          "required": ["contentSelfContained", "requiredAsset", "assetReady", "productionPlan", "evidenceUrls"],
+          "properties": {
+            "contentSelfContained": { "type": "boolean" },
+            "requiredAsset": { "enum": ["none", "simple-social-visual", "product-demo", "whitepaper-or-guide", "original-research", "customer-evidence"] },
+            "assetReady": { "enum": ["available", "producible-in-workflow", "missing", "unknown"] },
+            "productionPlan": { "type": "string" },
+            "evidenceUrls": { "type": "array", "items": { "type": "string", "format": "uri" } }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "scoring": {
+      "type": "object",
+      "required": ["freshness", "replicability", "tencentCloudFit", "brandSafety"],
+      "properties": {
+        "freshness": { "$ref": "#/$defs/score" },
+        "replicability": { "$ref": "#/$defs/score" },
+        "tencentCloudFit": { "$ref": "#/$defs/score" },
+        "brandSafety": { "$ref": "#/$defs/score" },
+        "relativeEngagementScore": { "$ref": "#/$defs/score" },
+        "deepEngagementProxyScore": { "$ref": "#/$defs/score" },
+        "signalScore": { "$ref": "#/$defs/score" },
+        "recommendation": { "enum": ["Create", "Watch", "Skip"] },
+        "decisionReasons": { "type": "array", "items": { "type": "string" } },
+        "blockers": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "tencentCloudAngle": {
+      "type": "object",
+      "required": ["customerLearning", "topic", "products", "applicationSurface", "bridgeReason", "ctaHypothesis", "claimRisks", "fitScore", "status"],
+      "properties": {
+        "customerLearning": { "type": "string" },
+        "topic": { "type": "string" },
+        "products": { "type": "array", "items": { "type": "string" } },
+        "applicationSurface": { "type": "string" },
+        "bridgeReason": { "type": "string" },
+        "ctaHypothesis": { "type": "string" },
+        "claimRisks": { "type": "array", "items": { "type": "string" } },
+        "fitScore": { "$ref": "#/$defs/score" },
+        "status": { "enum": ["ready", "needs_confirmation", "not_recommended"] }
+      },
+      "additionalProperties": true
+    },
+    "contentPackage": {
+      "type": "object",
+      "required": ["x", "linkedin", "instagram", "carousel", "cta", "hashtags", "altText", "internalReviewNotes"],
+      "properties": {
+        "x": { "type": "string" },
+        "linkedin": { "type": "string" },
+        "instagram": { "type": "string" },
+        "carousel": { "type": "array", "items": { "$ref": "#/$defs/slide" } },
+        "cta": { "type": "string" },
+        "hashtags": { "type": "array", "items": { "type": "string" } },
+        "altText": { "type": "string" },
+        "internalReviewNotes": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "visualPlan": {
+      "type": "object",
+      "required": ["assetPlan", "mode", "prompt", "negativePrompt", "backgrounds", "outputs", "visualSignature"],
+      "properties": {
+        "assetPlan": { "type": "array", "items": { "type": "string" } },
+        "mode": { "enum": ["material-illustration", "social-card", "illustration", "carousel-system", "none"] },
+        "prompt": { "type": "string" },
+        "negativePrompt": { "type": "string" },
+        "backgrounds": { "type": "array", "items": { "type": "string" } },
+        "outputs": { "type": "array", "items": { "type": "string" } },
+        "visualSignature": {
+          "type": "object",
+          "required": ["metaphor", "subjectInventory", "composition", "motionDirection"],
+          "properties": {
+            "metaphor": { "type": "string" },
+            "subjectInventory": { "type": "array", "items": { "type": "string" } },
+            "composition": { "type": "string" },
+            "motionDirection": { "type": "string" }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "review": {
+      "type": "object",
+      "required": ["brand", "frontOffice", "product", "cta", "risk", "vi", "publishApproved"],
+      "properties": {
+        "brand": { "$ref": "#/$defs/reviewGate" },
+        "frontOffice": { "$ref": "#/$defs/reviewGate" },
+        "product": { "$ref": "#/$defs/reviewGate" },
+        "cta": { "$ref": "#/$defs/reviewGate" },
+        "risk": { "$ref": "#/$defs/reviewGate" },
+        "vi": { "$ref": "#/$defs/reviewGate" },
+        "publishApproved": { "type": "boolean", "const": false }
+      },
+      "additionalProperties": true
+    },
+    "notion": {
+      "type": "object",
+      "properties": {
+        "database": { "type": "string" },
+        "dataSourceId": { "type": "string" },
+        "pageId": { "type": "string" },
+        "pageUrl": { "type": "string" },
+        "verifiedAt": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "score": { "type": "number", "minimum": 0, "maximum": 100 },
+    "metrics": {
+      "type": "object",
+      "required": ["likes", "repostsOrShares", "repliesOrComments", "bookmarks", "views", "engagement", "deepEngagement"],
+      "properties": {
+        "likes": { "type": "number", "minimum": 0 },
+        "repostsOrShares": { "type": "number", "minimum": 0 },
+        "repliesOrComments": { "type": "number", "minimum": 0 },
+        "bookmarks": { "type": "number", "minimum": 0 },
+        "views": { "type": "number", "minimum": 0 },
+        "engagement": { "type": "number", "minimum": 0 },
+        "deepEngagement": { "type": "number", "minimum": 0 }
+      },
+      "additionalProperties": true
+    },
+    "slide": {
+      "type": "object",
+      "required": ["title", "support", "example"],
+      "properties": {
+        "title": { "type": "string" },
+        "support": { "type": "string" },
+        "example": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "reviewGate": {
+      "type": "object",
+      "required": ["status", "notes"],
+      "properties": {
+        "status": { "enum": ["pending", "approved", "blocked", "not_required"] },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
